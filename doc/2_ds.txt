@@ -1,0 +1,82 @@
+
+
+
+
+
+===========================  Map ========================
+
+unordered_map<int, int> map; // unordered_map is a hash table that stores key-value pairs. 
+    map = { {1, 2}, {3, 4} };
+    map.insert(pair<int, int>(1, 2));
+    map[1] = 2;   // same as map.insert(pair<int, int>(1, 2));
+    map.erase(1); 
+    map.find(1); // returns an iterator to the element with key 1.
+    auto it = m.find(1);
+    cout << it->first << " " << it->second << endl;
+    map.count(1); // returns the number of elements with key 1.
+    map.size(); // returns the number of elements in the map.
+    map.empty(); // returns true if the map is empty.
+    map.clear(); // removes all elements from the map.
+    map.begin(); // returns an iterator to the first element in the map.
+    map.end(); // returns an iterator to the element after the last element in the map.
+    map.rbegin(); // returns an iterator to the last element in the map.
+    map.rend(); // returns an iterator to the element before the first element in the map.
+    map.swap(map2); // swaps the contents of the map with another map.
+    map.equal_range(1); // returns a pair of iterators that delimit the elements with key 1.
+
+
+============================ Vector =====================
+
+vector<int> v = {1, 2, 3};
+    vector<int> v2(arr, arr+n);
+    vector<int> v3(n, 0); // initialise vector of size n with 0 
+    v.push_back(4); // adds an element to the end of the vector.
+    v.pop_back(); // removes the last element from the vector.
+    v.front(); // returns the first element in the vector.
+    v.back(); // returns the last element in the vector.
+    v.insert(v.begin(), 5); // inserts an element at the beginning of the vector.
+    v.erase(v.begin()); // removes the first element from the vector.
+    v.erase(v.begin(), v.end()); // removes all elements from the vector.
+    v.resize(5); // resizes the vector to 5 elements.
+    v.resize(5, 1); // resizes the vector to 5 elements and initializes them with 1.
+    v.reserve(5); // reserves space for 5 elements.
+    v.shrink_to_fit(); // shrinks the vector to fit its actual size.
+    v.clear(); // removes all elements from the vector.
+    v.empty(); // returns true if the vector is empty.
+    v.size(); // returns the number of elements in the vector.
+    v.max_size(); // returns the maximum number of elements the vector can hold.
+    v.capacity(); // returns the maximum number of elements the vector can hold.
+    v.at(0); // returns the element at position 0.
+
+    -----------------  2-D vector ----------------
+    vector<vector<int>> M;
+    M.resize(m, vector<int>(n, 0))   //int m = number of rows, n = number of columns;
+    M.at(0).at(0); // returns the element at position (0, 0)
+    M.front().front(); // returns the element at position (0, 0)
+
+
+
+=========================== String ========================
+string str;
+    str.push_back('s'); // Inserting a character
+    str.append("s"); // Inserting a string
+    str.insert(0, "s"); // Inserting a string at position 0
+    str.erase(0, 1); // Erasing a character
+    str.erase(0, str.size()); // Erasing a string
+    str.replace(0, 1, "s"); // Replacing a character
+    str.replace(0, str.size(), "s"); // Replacing a string
+    str.find("s"); // Returns the position of the first occurrence of the string
+    str.rfind("s"); // Returns the position of the last occurrence of the string
+    str.find_first_of("s"); // Returns the position of the first occurrence of any character in the string
+    str.find_last_of("s"); // Returns the position of the last occurrence of any character in the string
+    str.pop_back(); // Removes the last character
+    str.empty(); // Returns true if the string is empty
+    str.size(); // Returns the number of characters in the string
+    str.max_size(); // Returns the maximum number of characters the string can hold
+    str.capacity(); // Returns the maximum number of characters the string can hold
+    str.at(0); // Returns the character at position 0
+    str.front(); // Returns the first character
+    str.back(); // Returns the last character
+    str.substr(0, 1); // Returns a substring
+    str.compare("s"); // Compares two strings
+    

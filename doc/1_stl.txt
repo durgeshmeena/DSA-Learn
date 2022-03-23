@@ -1,0 +1,47 @@
+======================================
+
+1. accumulate( first, last, initial_value, [myfun] )  ==> Calculate the sum of the values in the range [first,last). 
+    first = v.begin() = a 
+    second = v.end() =  a+n
+    myfun =  optional function for performing any specific task( multiply instead of add)
+    // https://www.geeksforgeeks.org/accumulate-and-partial_sum-in-c-stl-numeric-header/
+
+2. partial_sum(first, last, b, [myfun]) ==> Calculates partial sum of the elements of an array and store to every position of the second array in the range [first,last). 
+    first = v.begin() = a 
+    second = v.end() =  a+n
+    b = index of vector/array where  corresponding partial sum will be stored 
+    optional function myfun, for performing any specific task( multiply instead of add)
+    // https://www.geeksforgeeks.org/accumulate-and-partial_sum-in-c-stl-numeric-header/
+
+3. increasing a iterator 
+    auto it = v.begin();
+    it = it+1;
+    advance(it,1);
+    next(v.begin());
+    // https://www.techiedelight.com/iterate-second-element-vector-cpp/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
