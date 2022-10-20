@@ -18,12 +18,36 @@ int main() {
 
     int t;
     cin >> t;
-    int time = 30;
     while (t--) {
         int n;
-        cin >> n ;
+        cin >> n;
+        vector<int> a(n);
+        int zero=0, one=0;
+        for (int i = 0; i < n; i++) {
+            cin >> a[i];
+            if(a[i]==0) zero++;
+            else one++;
+        }
 
-        cout << (60*n)/time << endl;
+        int max_diff = 2*min(zero, one);
+        int diff=0, one_pair=0, zero_pair=0;
+        for(int i=0; i<n; i++){
+            if(a[i] != a[(i+1)%n]){
+                diff++;
+            }
+            if(a[i] == 1 and a[(i+1)%n] == 1){
+                one_pair++;
+            }
+            if(a[i] == 0 and a[(i+1)%n] == 0){
+                zero_pair++;
+            }
+            
+        }
         
+
+       
+        
+
+
     }
 }
